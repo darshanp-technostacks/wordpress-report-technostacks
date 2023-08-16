@@ -1,0 +1,14 @@
+table.wp-list-table {
+    margin-bottom: 40px;
+}
+h2.wp-heading-inline {
+    font-weight: 500;
+}
+h6.float-right {
+    float: right;
+    clear: both;
+    font-weight: 100;
+}
+#export_report{
+    margin-top: 9px;
+}
