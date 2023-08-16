@@ -71,10 +71,12 @@ if( !class_exists('WordpressReports') ){
             $wpcore = $info['wp-core']['fields'];
             $wpserver = $info['wp-server']['fields'];
             $wpdatabase = $info['wp-database']['fields'];
+
+            $pdfname = 'WordPress Report for '.get_bloginfo( 'name' ).' '.date('d-m-y');
             ?>
             <div class="wrap">
                 <h1 class="wp-heading-inline">WordPress Reports</h1>
-                <button type="button" class="button" id="export_report" data-pdfname="<?= sanitize_title( 'WordPress Reports '.date('d-m-y') ); ?>">Export</button>
+                <button type="button" class="button" id="export_report" data-pdfname="<?= sanitize_title( $pdfname ); ?>">Export</button>
 
                 <div class="wrap-content">
                     <h2 class="wp-heading-inline">WordPress Info</h2>
